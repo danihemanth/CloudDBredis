@@ -104,7 +104,7 @@ import redis.clients.jedis.exceptions.JedisNoScriptException;
   "android.permission.ACCESS_NETWORK_STATE")
 
 @UsesLibraries(libraries = "jedis.jar")
-public final class CloudDB extends AndroidNonvisibleComponent implements Component,
+public final class CloudDB extends AndroidvisibleComponent implements Component,
   OnClearListener, OnDestroyListener {
   private static final boolean DEBUG = false;
   private static final String LOG_TAG = "CloudDB";
